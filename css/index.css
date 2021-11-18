@@ -1,0 +1,127 @@
+.bg-shape {
+    top: 0px;
+    right: -100px;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+.hero__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #6A9BF0;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+.hero__anchor_wrapper {
+    margin-bottom: 40px;
+}
+.hero__anchor {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 72px;
+    display: block;
+    text-transform: capitalize;
+    transition: .2s;
+}
+.hero__anchor_general {
+    color: #4582EC;
+}
+.hero__anchor:hover {
+    color: #4582EC;
+}
+.hero__freelance {
+    display: none;
+}
+.hero .hero__freelance {
+    display: flex;
+    justify-content: space-between;
+}
+.hero__freelance_item {
+    margin: 0 15px 0 15px;
+    padding: 20px;
+    box-shadow: 0px 20px 40px rgba(11, 38, 84, 0.05);
+    border-radius: 6px;
+    background-color: #fff;
+}
+.hero__freelance_anchor {
+    margin-right: 20px;
+}
+.hero__slider {
+    width: 625px;
+
+    margin-right: 40px;
+}
+.hero__slider-item {
+    width: 625px;
+    display: block;
+}
+@media (max-width: 1570px) {
+    .hero .hero__freelance {
+        flex-direction: column;
+    }
+    .hero .hero__freelance_item {
+        width: 280px;
+    }
+}
+@media (max-width: 1250px) {
+    .hero {
+        margin-bottom: 50px;
+    }
+    .hero-text {
+        width: 400px
+    }
+    .hero__slider {
+        width: 300px
+    }
+    .hero__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .hero__anchor {
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .hero .hero__freelance {
+        display: none;
+    }
+    .hero__freelance {
+        display: flex;
+    }
+    .slick-dots {
+        top: 100px;
+    }
+}
+@media (max-width: 968px) {
+    .hero {
+        flex-direction: row;
+    }
+}
+@media (max-width: 767px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-text {
+        width: 100%;
+        margin: auto;
+    }
+
+    .hero__title {
+        font-size: 20px;
+    }
+    .hero__anchor {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .hero__freelance {
+        flex-direction: column;
+    }
+    .hero__slider {
+        margin: auto;
+        width: 325px;
+    }
+    .slick-dots {
+        top: -160px;
+        right: 0;
+    }
+}
